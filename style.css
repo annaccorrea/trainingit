@@ -1,0 +1,195 @@
+@import url("nookphone.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #FFBACD, #DA467D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-initial {
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-initial::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+}
+
+.login-logo img {
+    width: 60px;
+}
+
+.login-initial a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-initial a:hover {
+    text-decoration:  underline;
+}
+
+.login-logo,
+.login-header,
+.login-footer {
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.login-header h1 + div {
+    font-size: calc(1rem * .8);
+    opacity: 8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-form .form-item {
+    position: relative;
+}
+
+.login-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.login-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-initial input[type="text"],
+.login-initial input[type="password"],
+.login-initial input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: .5s;
+}
+
+.login-card-social-btn img{
+    width: 100px;
+}
+
+.login-initial input:focus {
+    background: white;
+}
+
+.login-initial input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.login-form button {
+    background: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 100px;
+    border: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.login-form button:hover {
+    background-color: #D8DCD6;
+    cursor: pointer;
+}
+
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-card-social>div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.login-card-social-btns a:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-initial {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
